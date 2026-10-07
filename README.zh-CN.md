@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+**Python V2 第一阶段（2026-10-07）：**已实现独立的 [Python 流程](python-v2/README.md)，完成 EDF 溯源、互斥时间划分、数值核验及 36 折嵌套 LOSO 逻辑回归基线。详见[阶段报告](docs/v2-stage1-report.md)。下方 MATLAB V1 与历史结果继续保留。
+
 本课程项目使用公开 EEG 数据，建立预处理、分窗、特征提取和机器学习分类流程，并比较被试内评估与留一被试（LOSO）评估。
 
 ## 核心观察

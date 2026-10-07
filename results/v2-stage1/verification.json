@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "folds_verified": 36,
+  "windows_verified": 2160,
+  "checks": [
+    "unique_windows",
+    "complete_test_ids",
+    "recomputed_metrics",
+    "source_target_disjoint",
+    "inner_subject_disjoint"
+  ]
+}

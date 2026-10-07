@@ -1,0 +1,1922 @@
+{
+  "schema_version": 1,
+  "legacy_mat_audit": {
+    "method": "Read only EEG numeric metadata and adjacent epoch endpoints with h5py; no reprocessing.",
+    "file_count": 72,
+    "shape_summary": [
+      {
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "file_count": 72
+      }
+    ],
+    "total_boundaries_checked": 2088,
+    "identical_adjacent_endpoint_vectors": 0,
+    "interpretation_limit": "The stored arrays establish epoch sizes and boundary values. They do not independently reconstruct original pre-epoch source timestamps or prove that no earlier preprocessing samples were removed.",
+    "records": [
+      {
+        "file": "Sub00_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.1090335845947266
+      },
+      {
+        "file": "Sub00_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.290585994720459
+      },
+      {
+        "file": "Sub01_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7278150320053101
+      },
+      {
+        "file": "Sub01_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.569923534989357
+      },
+      {
+        "file": "Sub02_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8265151977539062
+      },
+      {
+        "file": "Sub02_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9406881332397461
+      },
+      {
+        "file": "Sub03_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6594128608703613
+      },
+      {
+        "file": "Sub03_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8003864288330078
+      },
+      {
+        "file": "Sub04_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7994042038917542
+      },
+      {
+        "file": "Sub04_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8038244247436523
+      },
+      {
+        "file": "Sub05_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7839031219482422
+      },
+      {
+        "file": "Sub05_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.0856573581695557
+      },
+      {
+        "file": "Sub06_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.3161661624908447
+      },
+      {
+        "file": "Sub06_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.4700155258178711
+      },
+      {
+        "file": "Sub07_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.4822864532470703
+      },
+      {
+        "file": "Sub07_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6606674194335938
+      },
+      {
+        "file": "Sub08_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.42081642150878906
+      },
+      {
+        "file": "Sub08_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6791744232177734
+      },
+      {
+        "file": "Sub09_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.585627555847168
+      },
+      {
+        "file": "Sub09_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5525703430175781
+      },
+      {
+        "file": "Sub10_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6727390289306641
+      },
+      {
+        "file": "Sub10_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5211654901504517
+      },
+      {
+        "file": "Sub11_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5165295600891113
+      },
+      {
+        "file": "Sub11_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.2499743103981018
+      },
+      {
+        "file": "Sub12_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9412117004394531
+      },
+      {
+        "file": "Sub12_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9766397476196289
+      },
+      {
+        "file": "Sub13_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6796613931655884
+      },
+      {
+        "file": "Sub13_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5512628555297852
+      },
+      {
+        "file": "Sub14_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9626531600952148
+      },
+      {
+        "file": "Sub14_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7393902540206909
+      },
+      {
+        "file": "Sub15_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.0038957595825195
+      },
+      {
+        "file": "Sub15_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7142055034637451
+      },
+      {
+        "file": "Sub16_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7390871047973633
+      },
+      {
+        "file": "Sub16_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7261614799499512
+      },
+      {
+        "file": "Sub17_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7938446998596191
+      },
+      {
+        "file": "Sub17_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6950922012329102
+      },
+      {
+        "file": "Sub18_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.620203971862793
+      },
+      {
+        "file": "Sub18_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5945134162902832
+      },
+      {
+        "file": "Sub19_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8320601936429739
+      },
+      {
+        "file": "Sub19_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8105669021606445
+      },
+      {
+        "file": "Sub20_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.056431770324707
+      },
+      {
+        "file": "Sub20_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.1428025960922241
+      },
+      {
+        "file": "Sub21_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7913775444030762
+      },
+      {
+        "file": "Sub21_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9102821946144104
+      },
+      {
+        "file": "Sub22_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7613916397094727
+      },
+      {
+        "file": "Sub22_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8442878723144531
+      },
+      {
+        "file": "Sub23_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7187271118164062
+      },
+      {
+        "file": "Sub23_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.062112808227539
+      },
+      {
+        "file": "Sub24_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.4092216491699219
+      },
+      {
+        "file": "Sub24_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5495243072509766
+      },
+      {
+        "file": "Sub25_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.0143120288848877
+      },
+      {
+        "file": "Sub25_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.0714054107666016
+      },
+      {
+        "file": "Sub26_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.47093796730041504
+      },
+      {
+        "file": "Sub26_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.4693949222564697
+      },
+      {
+        "file": "Sub27_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.6657400131225586
+      },
+      {
+        "file": "Sub27_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5050859451293945
+      },
+      {
+        "file": "Sub28_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7610781192779541
+      },
+      {
+        "file": "Sub28_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8102589696645737
+      },
+      {
+        "file": "Sub29_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.745051383972168
+      },
+      {
+        "file": "Sub29_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.3331832885742188
+      },
+      {
+        "file": "Sub30_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7102451324462891
+      },
+      {
+        "file": "Sub30_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9008474349975586
+      },
+      {
+        "file": "Sub31_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5395584106445312
+      },
+      {
+        "file": "Sub31_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7047035694122314
+      },
+      {
+        "file": "Sub32_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.8965516090393066
+      },
+      {
+        "file": "Sub32_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 1.0397331714630127
+      },
+      {
+        "file": "Sub33_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.48438119888305664
+      },
+      {
+        "file": "Sub33_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7584352493286133
+      },
+      {
+        "file": "Sub34_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9568395614624023
+      },
+      {
+        "file": "Sub34_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.9541263580322266
+      },
+      {
+        "file": "Sub35_hi_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.5927786827087402
+      },
+      {
+        "file": "Sub35_lo_preprocessed.mat",
+        "matlab_data_shape": [
+          19,
+          1000,
+          30
+        ],
+        "hdf5_data_shape": [
+          30,
+          1000,
+          19
+        ],
+        "pnts": 1000,
+        "trials": 30,
+        "srate_hz": 500.0,
+        "concatenated_samples": 30000,
+        "concatenated_seconds": 60.0,
+        "epoch_times_first_ms": 0.0,
+        "epoch_times_last_ms": 1998.0,
+        "epoch_times_step_ms": 2.0,
+        "epoch_times_match_sampling_grid": true,
+        "adjacent_boundaries_checked": 29,
+        "identical_adjacent_endpoint_vectors": 0,
+        "minimum_boundary_max_channel_difference": 0.7809562683105469
+      }
+    ]
+  },
+  "same_input_matlab_parity": {
+    "input_shape": [
+      9,
+      19,
+      1000
+    ],
+    "input_unit": "microvolt",
+    "bands_hz": [
+      [
+        4.0,
+        8.0
+      ],
+      [
+        8.0,
+        13.0
+      ],
+      [
+        13.0,
+        30.0
+      ],
+      [
+        30.0,
+        45.0
+      ]
+    ],
+    "sources": [
+      {
+        "recording": "Subject00_1.edf",
+        "recording_sha256": "8b23c443f2f5f733f8ccc31a54377898009c28c7563d1107692a8735212d2f15",
+        "start_sample": 0,
+        "stop_sample_exclusive": 1000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject00_1.edf",
+        "recording_sha256": "8b23c443f2f5f733f8ccc31a54377898009c28c7563d1107692a8735212d2f15",
+        "start_sample": 10000,
+        "stop_sample_exclusive": 11000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject00_1.edf",
+        "recording_sha256": "8b23c443f2f5f733f8ccc31a54377898009c28c7563d1107692a8735212d2f15",
+        "start_sample": 20000,
+        "stop_sample_exclusive": 21000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject17_2.edf",
+        "recording_sha256": "9c9a0cbf89ed1152244b7c3d191c584cd59d3d99ff067e1610010d805cee62af",
+        "start_sample": 0,
+        "stop_sample_exclusive": 1000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject17_2.edf",
+        "recording_sha256": "9c9a0cbf89ed1152244b7c3d191c584cd59d3d99ff067e1610010d805cee62af",
+        "start_sample": 10000,
+        "stop_sample_exclusive": 11000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject17_2.edf",
+        "recording_sha256": "9c9a0cbf89ed1152244b7c3d191c584cd59d3d99ff067e1610010d805cee62af",
+        "start_sample": 20000,
+        "stop_sample_exclusive": 21000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject35_1.edf",
+        "recording_sha256": "1ffc283a017da6597c68cb19245c2138bdab0aa4d0355e323c27ed710d099a29",
+        "start_sample": 0,
+        "stop_sample_exclusive": 1000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject35_1.edf",
+        "recording_sha256": "1ffc283a017da6597c68cb19245c2138bdab0aa4d0355e323c27ed710d099a29",
+        "start_sample": 10000,
+        "stop_sample_exclusive": 11000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      },
+      {
+        "recording": "Subject35_1.edf",
+        "recording_sha256": "1ffc283a017da6597c68cb19245c2138bdab0aa4d0355e323c27ed710d099a29",
+        "start_sample": 20000,
+        "stop_sample_exclusive": 21000,
+        "preprocessing": "none; EDF physical samples converted to microvolts"
+      }
+    ],
+    "status": "passed",
+    "formula": "V1 one-sided next-power-of-two periodogram; inclusive bands; no demeaning; DE bits; low-power floor -50",
+    "de_atol": 1e-10,
+    "power_rtol": 1e-10,
+    "power_atol": 1e-10,
+    "matlab_exit_code": 0,
+    "matlab_version": "24.1.0.2537033 (R2024a)",
+    "de_max_abs_error": 8.881784197001252e-16,
+    "power_max_abs_error": 2.842170943040401e-14,
+    "compared_de_values": 684
+  }
+}

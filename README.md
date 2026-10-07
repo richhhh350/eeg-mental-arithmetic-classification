@@ -2,6 +2,8 @@
 
 [中文说明](README.zh-CN.md)
 
+**Python V2, stage 1 (2026-10-07):** the independent [Python implementation](python-v2/README.md) now includes EDF provenance, interval-isolated splits, numerical validation and a nested 36-subject LOSO logistic-regression baseline. See the [stage report](docs/v2-stage1-report.md). The MATLAB V1 code and historical results below are preserved.
+
 A MATLAB coursework project for classifying **resting-state vs. mental-arithmetic EEG** and comparing within-subject performance with generalization to unseen subjects.
 
 The central observation is a large evaluation gap: saved within-subject test accuracies average **98.50–99.42%**, while leave-one-subject-out (LOSO) accuracies average **52.68–56.24%**. These results motivate further work on evaluation design and individual differences; they do not establish a reliable general-purpose cognitive-load detector.

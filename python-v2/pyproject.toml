@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eeg-task-state-v2"
+version = "0.1.0"
+description = "Traceable EEG task-state classification with subject-isolated evaluation"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy", "scipy", "mne", "scikit-learn", "matplotlib", "joblib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "h5py"]
+
+[project.scripts]
+eeg-v2 = "eeg_v2.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

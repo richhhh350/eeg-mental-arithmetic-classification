@@ -1,0 +1,68 @@
+{
+  "scope": "Independent read-only audit of saved stage1 outputs; no source edits or training; output artifact only.",
+  "dataset_id": "6b401d30d169cd3877c2257c764d15dd156e571d72dc910991685de3ddcaf5e3",
+  "passed": true,
+  "checks": {
+    "36_subjects_and_2160_unique_windows": true,
+    "prediction_source_columns_match_manifest": true,
+    "each_subject_has_60_balanced_windows": true,
+    "outer_subject_matches_every_prediction": true,
+    "72_records_each_with_30_nonoverlapping_windows": true,
+    "36_complete_outer_selections_and_all_inner_subject_isolation": true,
+    "smoke_180_predictions_exactly_match_full_run": true,
+    "independent_confusion_and_rank_auc_recompute": true,
+    "summary_means_match_independent_recompute": true,
+    "qc_all_72_records_present_and_19_channels": true,
+    "all_finite_no_wholly_flat_or_heuristic_clipping_flags": true,
+    "feature_arrays_match_window_metadata": true,
+    "anonymous_json_metadata": true,
+    "json_contains_no_absolute_local_paths": true
+  },
+  "issues": [],
+  "outer_folds": 36,
+  "predicted_unique_windows": 2160,
+  "inner_candidate_fold_partitions_checked": 432,
+  "selected_C_counts": {
+    "0.01": 36
+  },
+  "smoke_windows": 180,
+  "smoke_max_abs_probability_difference": 0.0,
+  "recomputed_mean_subject_metrics": {
+    "balanced_accuracy": 0.6305555555555555,
+    "accuracy": 0.6305555555555555,
+    "macro_f1": 0.58441948525209,
+    "positive_class_f1": 0.560403710418897,
+    "roc_auc": 0.7551851851851852
+  },
+  "balanced_accuracy_min": 0.23333333333333334,
+  "balanced_accuracy_max": 0.9666666666666667,
+  "balanced_accuracy_median": 0.6166666666666667,
+  "qc": {
+    "record_count": 72,
+    "channel_records": 1368,
+    "records_with_nonfinite_samples": 0,
+    "nonfinite_channel_records": 0,
+    "wholly_flat_channel_records": 0,
+    "possible_clipping_channel_records": 0,
+    "std_uV_min": 4.590385389869692,
+    "std_uV_max": 45.336037653009896,
+    "text_annotation_events": 0
+  },
+  "privacy": {
+    "json_files_scanned": 49,
+    "suspicious_identity_field_paths": [],
+    "matches_to_full_edf_identity_fields": 0,
+    "matches_to_edf_recording_dates": 0,
+    "absolute_local_path_values": 0,
+    "note": "Public Subject IDs and software execution timestamps are retained; annotation free text is not exported."
+  },
+  "input_sha256": {
+    "loso-stage1\\predictions.csv": "513f7abb974bdfa12da732214a5861c23be5c74041829bd0ffc80ea52edadb9f",
+    "loso-stage1\\subject_metrics.csv": "4664b2d3418eae8fe3ca104a343d7650d38d83f0569fba71b12b364eb25fa6e6",
+    "loso-stage1\\summary.json": "0f3924749b8d3a19ea32602c24bc852df0dba8c3f05e9e31159e54ec40fd9f3f",
+    "smoke-stage1\\predictions.csv": "5925ea053d9cad039c2c56e84362db3d5a4d02b404b814ba3bd820ef94d7c4d8",
+    "prepared-stage1\\windows.csv": "404ce8136973cd500aca2acff7fd79280c552ba6c1fbe93b50907c633c486c90",
+    "prepared-stage1\\records.json": "415b63261afbe7e8f139a17fb6199ef274c78e986f5714850487414e964a4988",
+    "prepared-stage1\\quality.json": "459abffdd09dc9b2569d720835bded9cda478fa271c0b3a82d7acdd3f3d3cec8"
+  }
+}

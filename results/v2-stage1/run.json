@@ -1,0 +1,146 @@
+{
+  "dataset_id": "6b401d30d169cd3877c2257c764d15dd156e571d72dc910991685de3ddcaf5e3",
+  "config": {
+    "protocol_id": "stage1-s2-de-lr-v1",
+    "frozen_on": "2026-10-07",
+    "task": "rest_0_vs_arithmetic_1",
+    "subjects": 36,
+    "fs_hz": 500,
+    "crop_start_seconds": 0.0,
+    "crop_seconds": 60.0,
+    "crop_rationale": "No text events in all 72 EDF annotation channels. First 60 seconds is a reproducible V1 bridge, not a verified task onset.",
+    "window_seconds": 2.0,
+    "stride_seconds": 2.0,
+    "bands_hz": [
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        13,
+        30
+      ]
+    ],
+    "band_names": [
+      "theta",
+      "alpha",
+      "beta"
+    ],
+    "band_endpoints": "inclusive_v1_compatibility",
+    "preprocessing": {
+      "input_unit": "uV",
+      "average_reference": true,
+      "window_demean": true,
+      "additional_temporal_filter": false,
+      "additional_ica": false,
+      "supplier_processing": "Already cleaned by supplier; cannot undo or certify original information boundaries."
+    },
+    "feature": "DE_log2_periodogram_v1",
+    "feature_order": "channel_major_band_minor",
+    "primary_metric": "equal_subject_mean_balanced_accuracy",
+    "secondary_metrics": [
+      "accuracy",
+      "macro_f1",
+      "positive_class_f1",
+      "roc_auc"
+    ],
+    "inner_group_folds": 3,
+    "lr_C": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "lr_solver": "lbfgs",
+    "lr_max_iter": 3000,
+    "scaler_std_ddof": 0,
+    "decision_threshold": 0.5,
+    "selection_tie_break": "smallest_C_within_1e-12",
+    "seed": 42,
+    "smoke_subjects": [
+      "Subject00",
+      "Subject17",
+      "Subject35"
+    ],
+    "s1_ratios": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "s1_gap_seconds": 4.0,
+    "s1_gap_rationale": "Conservative separation covering maximum planned 4-second window; no new temporal filtering. Recalculate support if adding filtering.",
+    "quality_policy": "Report every file. Nonfinite data or wholly flat channel stops preparation. No score-driven exclusions, clipping flags are descriptive only.",
+    "failure_policy": "Record failed status and exception; do not substitute predictions or silently drop folds. Incomplete runs are not a complete baseline.",
+    "scope": "S2 is primary. S1 split manifests and isolation tests only at stage1. No target calibration."
+  },
+  "subjects": [
+    "Subject00",
+    "Subject01",
+    "Subject02",
+    "Subject03",
+    "Subject04",
+    "Subject05",
+    "Subject06",
+    "Subject07",
+    "Subject08",
+    "Subject09",
+    "Subject10",
+    "Subject11",
+    "Subject12",
+    "Subject13",
+    "Subject14",
+    "Subject15",
+    "Subject16",
+    "Subject17",
+    "Subject18",
+    "Subject19",
+    "Subject20",
+    "Subject21",
+    "Subject22",
+    "Subject23",
+    "Subject24",
+    "Subject25",
+    "Subject26",
+    "Subject27",
+    "Subject28",
+    "Subject29",
+    "Subject30",
+    "Subject31",
+    "Subject32",
+    "Subject33",
+    "Subject34",
+    "Subject35"
+  ],
+  "source_files": {
+    "__init__.py": "1595a6a9982e03ac18971f2b38b4c7ec64309b657876b108f5ee7ed473b46e7d",
+    "cli.py": "2f64198958dea1d16152a5afa8aa56f863f7c2a043f017426d76b10d7405cb2f",
+    "data.py": "10803ec0c9d5d4d9f0dcb41493bbc091b86ccd147ce7d837a4cc6fd69119e458",
+    "evaluation.py": "1cf6e7b91559dcfe9edbb02379a36027badc6db16efb85608749981a4ce25317",
+    "features.py": "6a2e6f42ae58a1252ad0c93dfc90a71b9759bd47339d1001eddb4e6964fa98ad",
+    "provenance.py": "20102e50fa888c2d31dcedf66f09f284fb79fb52a4321572e847d45b67ee679d",
+    "splits.py": "8c4568a2676bc00d646ba0277761a173c446da29c96e0ba7c75ff046e1899e15"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16,
+    "compute": "CPU; LR does not use GPU",
+    "blas_threads_during_training": 1,
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "mne": "1.13.2",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pytest": "9.1.1",
+      "h5py": "3.16.0"
+    }
+  },
+  "started_utc": "2026-10-07T14:29:49.595486+00:00"
+}
