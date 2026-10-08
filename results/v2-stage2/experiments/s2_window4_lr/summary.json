@@ -1,0 +1,20 @@
+{
+  "experiment": {
+    "id": "s2_window4_lr",
+    "kind": "lr",
+    "variant": "de4",
+    "protocol": "S2"
+  },
+  "requested_folds": 36,
+  "completed_folds": 36,
+  "status": "complete",
+  "dataset_id": "40eb85b1681c063851deeaec2f63b374931f1f6d4a3aefab721f7e5a8c4fa124",
+  "mean_subject_balanced_accuracy": 0.6648148148148149,
+  "mean_subject_accuracy": 0.6648148148148149,
+  "mean_subject_macro_f1": 0.6104899815255506,
+  "mean_subject_positive_class_f1": 0.5834349372761614,
+  "mean_subject_roc_auc": 0.7870370370370371,
+  "elapsed_seconds": 21.254547000000457,
+  "min_subject_ba": 0.3,
+  "max_subject_ba": 0.9666666666666667
+}

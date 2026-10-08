@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "folds": 36,
+  "windows": 2160,
+  "inner_candidate_folds_checked": 108,
+  "checks": [
+    "manifest_hash",
+    "window_alignment",
+    "fit_test_boundaries",
+    "inner_subject_isolation",
+    "saved_score_threshold",
+    "independently_recomputed_metrics"
+  ]
+}

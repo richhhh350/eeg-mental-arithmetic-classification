@@ -1,0 +1,13 @@
+{
+  "dataset_id": "40eb85b1681c063851deeaec2f63b374931f1f6d4a3aefab721f7e5a8c4fa124",
+  "experiments": 18,
+  "outer_evaluations": 648,
+  "stage1_reference_max_probability_error": 0.0,
+  "overlap_evaluation_features_and_metadata_identical": true,
+  "pca_targets": [
+    "Subject00",
+    "Subject17",
+    "Subject35"
+  ],
+  "statistical_scope": "Paired subject descriptive differences and conditional paired-subject bootstrap percentile intervals (5000, seed42); no confirmatory p-values or independence claim for overlapping LOSO training sets."
+}

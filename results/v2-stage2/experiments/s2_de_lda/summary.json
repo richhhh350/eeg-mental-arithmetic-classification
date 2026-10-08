@@ -1,0 +1,20 @@
+{
+  "experiment": {
+    "id": "s2_de_lda",
+    "kind": "lda",
+    "variant": "de2",
+    "protocol": "S2"
+  },
+  "requested_folds": 36,
+  "completed_folds": 36,
+  "status": "complete",
+  "dataset_id": "40eb85b1681c063851deeaec2f63b374931f1f6d4a3aefab721f7e5a8c4fa124",
+  "mean_subject_balanced_accuracy": 0.6523148148148148,
+  "mean_subject_accuracy": 0.6523148148148148,
+  "mean_subject_macro_f1": 0.6049521602626059,
+  "mean_subject_positive_class_f1": 0.583936885554739,
+  "mean_subject_roc_auc": 0.7703086419753087,
+  "elapsed_seconds": 15.934055800000124,
+  "min_subject_ba": 0.18333333333333332,
+  "max_subject_ba": 0.95
+}

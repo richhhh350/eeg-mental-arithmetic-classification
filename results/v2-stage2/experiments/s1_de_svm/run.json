@@ -1,0 +1,439 @@
+{
+  "experiment": {
+    "id": "s1_de_svm",
+    "kind": "svm",
+    "variant": "s1",
+    "protocol": "S1"
+  },
+  "config": {
+    "protocol_id": "stage2-traditional-and-ablations-v1",
+    "frozen_on": "2026-10-07",
+    "stage1_config": "configs/stage1.json",
+    "stage1_github_commit": "8dade8512f9f7bd308dc5cefe649f8e420f6cd84",
+    "seed": 42,
+    "inner_folds": 3,
+    "candidates": {
+      "lr": [
+        {
+          "C": 0.01
+        },
+        {
+          "C": 0.1
+        },
+        {
+          "C": 1.0
+        },
+        {
+          "C": 10.0
+        }
+      ],
+      "lda": [
+        {
+          "shrinkage": "auto"
+        },
+        {
+          "shrinkage": 0.1
+        },
+        {
+          "shrinkage": 0.5
+        }
+      ],
+      "svm": [
+        {
+          "C": 0.1,
+          "gamma": "scale"
+        },
+        {
+          "C": 1.0,
+          "gamma": "scale"
+        },
+        {
+          "C": 10.0,
+          "gamma": "scale"
+        }
+      ],
+      "dummy": [
+        {}
+      ]
+    },
+    "s2_experiments": [
+      {
+        "id": "s2_de_lr",
+        "kind": "lr",
+        "variant": "de2"
+      },
+      {
+        "id": "s2_de_lda",
+        "kind": "lda",
+        "variant": "de2"
+      },
+      {
+        "id": "s2_de_svm",
+        "kind": "svm",
+        "variant": "de2"
+      },
+      {
+        "id": "s2_dummy",
+        "kind": "dummy",
+        "variant": "de2"
+      },
+      {
+        "id": "s2_relative_lr",
+        "kind": "lr",
+        "variant": "relative2"
+      },
+      {
+        "id": "s2_hjorth_lr",
+        "kind": "lr",
+        "variant": "hjorth2"
+      },
+      {
+        "id": "s2_de_hjorth_lr",
+        "kind": "lr",
+        "variant": "de_hjorth2"
+      },
+      {
+        "id": "s2_without_theta_lr",
+        "kind": "lr",
+        "variant": "without_theta2"
+      },
+      {
+        "id": "s2_without_alpha_lr",
+        "kind": "lr",
+        "variant": "without_alpha2"
+      },
+      {
+        "id": "s2_without_beta_lr",
+        "kind": "lr",
+        "variant": "without_beta2"
+      },
+      {
+        "id": "s2_gamma_sensitivity_lr",
+        "kind": "lr",
+        "variant": "gamma2"
+      },
+      {
+        "id": "s2_window1_lr",
+        "kind": "lr",
+        "variant": "de1"
+      },
+      {
+        "id": "s2_window4_lr",
+        "kind": "lr",
+        "variant": "de4"
+      },
+      {
+        "id": "s2_overlap_train_lr",
+        "kind": "lr",
+        "variant": "overlap2"
+      }
+    ],
+    "variants": {
+      "de2": {
+        "feature": "de",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "relative2": {
+        "feature": "relative_power",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "hjorth2": {
+        "feature": "hjorth",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "de_hjorth2": {
+        "feature": "de_hjorth",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "without_theta2": {
+        "feature": "de",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "without_alpha2": {
+        "feature": "de",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "without_beta2": {
+        "feature": "de",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ]
+        ]
+      },
+      "gamma2": {
+        "feature": "de",
+        "window_seconds": 2,
+        "train_stride_seconds": 2,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ],
+          [
+            30,
+            45
+          ]
+        ]
+      },
+      "de1": {
+        "feature": "de",
+        "window_seconds": 1,
+        "train_stride_seconds": 1,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "de4": {
+        "feature": "de",
+        "window_seconds": 4,
+        "train_stride_seconds": 4,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      },
+      "overlap2": {
+        "feature": "de",
+        "window_seconds": 2,
+        "train_stride_seconds": 1,
+        "bands": [
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            13,
+            30
+          ]
+        ]
+      }
+    },
+    "s1_models": [
+      "lr",
+      "lda",
+      "svm",
+      "dummy"
+    ],
+    "s1_final_fit": "Selected train-block-only model; validation is not merged into final fit.",
+    "s1_protocol": "Same stage1 4-second gaps and block ratios; independent windows within each raw block; both conditions required.",
+    "s2_overlap_protocol": "Overlapping windows used only in current source training subjects; all inner-validation and outer-test windows are nonoverlapping, identical to de2.",
+    "window_comparison": "All window sizes cover the same [0,60) seconds per condition; BA averaged over subjects, not windows across subjects.",
+    "selection_tie_break": "First declared candidate within 1e-12 of maximum mean subject BA.",
+    "svm_score": "Uncalibrated decision margin, threshold 0; never labelled probability.",
+    "hjorth_definition": "log2(var+1e-15), sqrt(var(diff)/var), sqrt(var(diff2)/var(diff))/mobility; sample differences, ddof=0; zero denominators give 0.",
+    "relative_power_definition": "Each band within 4-30 Hz divided by single 4-30 Hz integrated power; zero denominator gives zero, otherwise no amplitude floor; no sum of overlapping bands as denominator.",
+    "pca_targets": [
+      "Subject00",
+      "Subject17",
+      "Subject35"
+    ],
+    "pca_fit": "35 source subjects only, StandardScaler then 2-component full-SVD PCA; target is transformed only.",
+    "comparison_statistics": "Paired subject descriptive differences and conditional paired-subject bootstrap percentile intervals (5000, seed42); no confirmatory p-values or independence claim for overlapping LOSO training sets.",
+    "bootstrap_replicates": 5000,
+    "failure_policy": "Explicit failed status/exception, no dummy fallback, no aggregate over only successful folds.",
+    "interpretation": "Exploratory within an already studied dataset. No best outer-test variant promoted to a confirmatory model; future choices belong inside source-only selection.",
+    "out_of_scope": [
+      "additional_ICA",
+      "UMAP",
+      "EEGNet",
+      "target_calibration",
+      "CORAL",
+      "DANN"
+    ]
+  },
+  "dataset_id": "40eb85b1681c063851deeaec2f63b374931f1f6d4a3aefab721f7e5a8c4fa124",
+  "subjects": [
+    "Subject00",
+    "Subject01",
+    "Subject02",
+    "Subject03",
+    "Subject04",
+    "Subject05",
+    "Subject06",
+    "Subject07",
+    "Subject08",
+    "Subject09",
+    "Subject10",
+    "Subject11",
+    "Subject12",
+    "Subject13",
+    "Subject14",
+    "Subject15",
+    "Subject16",
+    "Subject17",
+    "Subject18",
+    "Subject19",
+    "Subject20",
+    "Subject21",
+    "Subject22",
+    "Subject23",
+    "Subject24",
+    "Subject25",
+    "Subject26",
+    "Subject27",
+    "Subject28",
+    "Subject29",
+    "Subject30",
+    "Subject31",
+    "Subject32",
+    "Subject33",
+    "Subject34",
+    "Subject35"
+  ],
+  "source_files": {
+    "__init__.py": "1595a6a9982e03ac18971f2b38b4c7ec64309b657876b108f5ee7ed473b46e7d",
+    "cli.py": "2f64198958dea1d16152a5afa8aa56f863f7c2a043f017426d76b10d7405cb2f",
+    "data.py": "10803ec0c9d5d4d9f0dcb41493bbc091b86ccd147ce7d837a4cc6fd69119e458",
+    "evaluation.py": "1cf6e7b91559dcfe9edbb02379a36027badc6db16efb85608749981a4ce25317",
+    "features.py": "6a2e6f42ae58a1252ad0c93dfc90a71b9759bd47339d1001eddb4e6964fa98ad",
+    "provenance.py": "20102e50fa888c2d31dcedf66f09f284fb79fb52a4321572e847d45b67ee679d",
+    "splits.py": "8c4568a2676bc00d646ba0277761a173c446da29c96e0ba7c75ff046e1899e15",
+    "stage2.py": "3bca6dfaf8a1e947f048adadb868c57273deb1e496fcf0893e9310c0b8be590f",
+    "stage2_analysis.py": "73b8ac893aab178f99b2b8097a135be5d184a4bfc478c043a76174ba9c7dfeae",
+    "stage2_features.py": "970beaa32ff862a537bb647ffd0e265f4f53bddbaf1556fb6c6983178239b4eb",
+    "stage2_models.py": "f2fe7accc335061ad97528c2a4e935069173d80540951bf3ae35072856c90c3d",
+    "stage2_report.py": "58a1da0c64a68cb980ad6d1364fb7e5a77a124ad91c7f4de732a9fe4b77d91ad"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "logical_cpus": 16,
+    "compute": "CPU; LR does not use GPU",
+    "blas_threads_during_training": 1,
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "mne": "1.13.2",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pytest": "9.1.1",
+      "h5py": "3.16.0"
+    }
+  },
+  "started_utc": "2026-10-08T04:40:47.547358+00:00"
+}

@@ -2,6 +2,26 @@
 
 独立于原 MATLAB V1 的实现。第一阶段已完成 36 折嵌套 LOSO 逻辑回归基线，详见[阶段报告](../docs/v2-stage1-report.md)。EDF、环境、模型及完整中间结果不随仓库分发。
 
+**第二阶段（2026-10-08）**已完成 S1 对照、传统模型比较、单因素消融与来源训练 PCA，见[第二阶段报告](../docs/v2-stage2-report.md)。第一阶段命令和产物保持可用。
+
+## 第二阶段复现
+
+先完成下方环境安装和第一阶段 `prepare`。复现目录名可自行更换，`--reference-prepared` 指向第一阶段已校验的数据产物。以下仍在 `python-v2` 目录执行：
+
+```powershell
+$eegDataDir = '..\..\..\eeg-during-mental-arithmetic-tasks-1.0.0\eeg-during-mental-arithmetic-tasks-1.0.0'
+& .\.venv\Scripts\python.exe -m eeg_v2.stage2 prepare --data-dir $eegDataDir --reference-prepared outputs/prepared-stage1 --output outputs/prepared-stage2-new
+& .\.venv\Scripts\python.exe -m eeg_v2.stage2 run --prepared outputs/prepared-stage2-new --output outputs/smoke-stage2-new --subjects Subject00 Subject17 Subject35
+& .\.venv\Scripts\python.exe -m eeg_v2.stage2 run --prepared outputs/prepared-stage2-new --output outputs/runs-stage2-new
+& .\.venv\Scripts\python.exe -m eeg_v2.stage2_report --prepared outputs/prepared-stage2-new --runs outputs/runs-stage2-new --output outputs/analysis-stage2-new --stage1-run outputs/loso-stage1
+```
+
+第二阶段分析需要第一阶段完整预测，用于检查参考模型概率是否保持一致。如第一阶段使用了其他目录名，修改两个对应参数。只复现一个实验时，可在 `stage2 run` 后加 `--experiments s2_de_svm --subjects Subject00`；单组复核使用 `stage2 verify --prepared ... --output .../s2_de_svm`。最终报告命令要求 18 组实验各完成 36 人，不会把子集当作全量结果。
+
+冻结方案见 [stage2.json](configs/stage2.json)。14 组 S2 和 4 组 S1 是并列实验，每组保持自己明确的训练/验证/测试规则；不是对测试结果自动择优的搜索器。S1 最终模型只拟合训练块，验证块只选参数。S2 的重叠实验只增加源训练窗，验证/测试窗不变。SVM 输出 `decision_margin`，不能解释为概率。
+
+新增 `stage2_features.py`、`stage2_models.py`、`stage2.py`、`stage2_analysis.py`、`stage2_report.py`；本地完整产物分别位于 `outputs/prepared-stage2`、`outputs/runs-stage2`、`outputs/analysis-stage2`。报告证据导出不包含模型和原始 EEG。
+
 ## 安装
 
 使用 **Python 3.12**。Windows PowerShell 中，进入本目录后运行：

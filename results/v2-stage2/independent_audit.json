@@ -1,0 +1,194 @@
+{
+  "passed": true,
+  "method": "Independent confusion counts and rank-AUC; source-scaler means and score reproduction from all locally generated saved models; no retraining.",
+  "experiments": 18,
+  "models_and_outer_folds_verified": 648,
+  "prediction_rows_verified": 32760,
+  "inner_candidate_folds_verified": 5508,
+  "smoke_scores_exactly_reproduced": 2730,
+  "saved_model_score_max_error": 0.0,
+  "pca_source_fit_and_coordinates_verified": [
+    "Subject00",
+    "Subject17",
+    "Subject35"
+  ],
+  "details": [
+    {
+      "experiment": "s2_de_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6305555555555555,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s2_de_lda",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6523148148148148,
+      "selected_params_counts": {
+        "{\"shrinkage\": 0.5}": 35,
+        "{\"shrinkage\": 0.1}": 1
+      }
+    },
+    {
+      "experiment": "s2_de_svm",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6351851851851852,
+      "selected_params_counts": {
+        "{\"C\": 1.0, \"gamma\": \"scale\"}": 17,
+        "{\"C\": 0.1, \"gamma\": \"scale\"}": 19
+      }
+    },
+    {
+      "experiment": "s2_dummy",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.5,
+      "selected_params_counts": {
+        "{}": 36
+      }
+    },
+    {
+      "experiment": "s2_relative_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6148148148148148,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 20,
+        "{\"C\": 0.1}": 11,
+        "{\"C\": 10.0}": 3,
+        "{\"C\": 1.0}": 2
+      }
+    },
+    {
+      "experiment": "s2_hjorth_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6314814814814815,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s2_de_hjorth_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6388888888888888,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s2_without_theta_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.623611111111111,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 35,
+        "{\"C\": 0.1}": 1
+      }
+    },
+    {
+      "experiment": "s2_without_alpha_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6310185185185185,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 34,
+        "{\"C\": 1.0}": 2
+      }
+    },
+    {
+      "experiment": "s2_without_beta_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6287037037037035,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s2_gamma_sensitivity_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6425925925925926,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s2_window1_lr",
+      "folds": 36,
+      "predictions": 4320,
+      "mean_ba": 0.6256944444444444,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 35,
+        "{\"C\": 0.1}": 1
+      }
+    },
+    {
+      "experiment": "s2_window4_lr",
+      "folds": 36,
+      "predictions": 1080,
+      "mean_ba": 0.6648148148148149,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s2_overlap_train_lr",
+      "folds": 36,
+      "predictions": 2160,
+      "mean_ba": 0.6217592592592592,
+      "selected_params_counts": {
+        "{\"C\": 0.01}": 36
+      }
+    },
+    {
+      "experiment": "s1_de_lr",
+      "folds": 36,
+      "predictions": 360,
+      "mean_ba": 0.8666666666666667,
+      "selected_params_counts": {
+        "{\"C\": 0.1}": 7,
+        "{\"C\": 0.01}": 25,
+        "{\"C\": 1.0}": 3,
+        "{\"C\": 10.0}": 1
+      }
+    },
+    {
+      "experiment": "s1_de_lda",
+      "folds": 36,
+      "predictions": 360,
+      "mean_ba": 0.9138888888888889,
+      "selected_params_counts": {
+        "{\"shrinkage\": \"auto\"}": 34,
+        "{\"shrinkage\": 0.1}": 2
+      }
+    },
+    {
+      "experiment": "s1_de_svm",
+      "folds": 36,
+      "predictions": 360,
+      "mean_ba": 0.861111111111111,
+      "selected_params_counts": {
+        "{\"C\": 1.0, \"gamma\": \"scale\"}": 9,
+        "{\"C\": 10.0, \"gamma\": \"scale\"}": 4,
+        "{\"C\": 0.1, \"gamma\": \"scale\"}": 23
+      }
+    },
+    {
+      "experiment": "s1_de_dummy",
+      "folds": 36,
+      "predictions": 360,
+      "mean_ba": 0.5,
+      "selected_params_counts": {
+        "{}": 36
+      }
+    }
+  ],
+  "note": "Repeated windows across experiments are not additional independent participants; there are 36 participants."
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": {
+    "id": "s2_de_hjorth_lr",
+    "kind": "lr",
+    "variant": "de_hjorth2",
+    "protocol": "S2"
+  },
+  "requested_folds": 36,
+  "completed_folds": 36,
+  "status": "complete",
+  "dataset_id": "40eb85b1681c063851deeaec2f63b374931f1f6d4a3aefab721f7e5a8c4fa124",
+  "mean_subject_balanced_accuracy": 0.6388888888888888,
+  "mean_subject_accuracy": 0.6388888888888888,
+  "mean_subject_macro_f1": 0.5922159066703241,
+  "mean_subject_positive_class_f1": 0.575916577655696,
+  "mean_subject_roc_auc": 0.7405864197530865,
+  "elapsed_seconds": 27.05836230000068,
+  "min_subject_ba": 0.3,
+  "max_subject_ba": 1.0
+}

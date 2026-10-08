@@ -1,0 +1,20 @@
+{
+  "experiment": {
+    "id": "s2_without_beta_lr",
+    "kind": "lr",
+    "variant": "without_beta2",
+    "protocol": "S2"
+  },
+  "requested_folds": 36,
+  "completed_folds": 36,
+  "status": "complete",
+  "dataset_id": "40eb85b1681c063851deeaec2f63b374931f1f6d4a3aefab721f7e5a8c4fa124",
+  "mean_subject_balanced_accuracy": 0.6287037037037035,
+  "mean_subject_accuracy": 0.6287037037037035,
+  "mean_subject_macro_f1": 0.5853335336380812,
+  "mean_subject_positive_class_f1": 0.5612883856992053,
+  "mean_subject_roc_auc": 0.7205555555555556,
+  "elapsed_seconds": 21.291799399999036,
+  "min_subject_ba": 0.36666666666666664,
+  "max_subject_ba": 0.9666666666666667
+}
