@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "calibration_models": 252,
+  "calibration_predictions": 9072,
+  "permutation_replicates": 999,
+  "permutation_total_fits": 36000,
+  "permutation_replay_indices": [
+    0,
+    1,
+    42,
+    999
+  ],
+  "permutation_p_recomputed": true,
+  "umap_source_fits": 3,
+  "paired_statistics_verified": true,
+  "feature_tests": 57,
+  "eegnet_models_explained": 108,
+  "region_perturbations": 540,
+  "calibration_fingerprint_id": "918c40fa6bfd99c34fa9c8dd2e416e50f52a6f26dc9cea904637b68776a88f89",
+  "permutation_fingerprint_id": "168437c09eaec1fd053cdee2ee91e39949a9c8b8caa83719e1a824814d8f03a4",
+  "analysis_fingerprint_id": "9df4dad7f5b6273cc15b16fde9785a47ec803163cf2eee20e948f4f41e76c3f0"
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "reviewed_on": "2026-10-09",
+  "method": "All nine rendered PNGs visually inspected for labels, scales, clipping and legend placement",
+  "figures": {
+    "analysis/calibration_budget.png": "30628e57a41a5ba0870cdcd099f88f31ab35be584ef51ce8f4a389c530d4fecd",
+    "analysis/eegnet_region_perturbation.png": "74720c58a2759e0640ee60274f375c359dc71d49a47e6bae61243318c6408763",
+    "analysis/eegnet_spatial_weights.png": "03b5926d9c43840bd80f24e9f18600cd1c7c7ece560e1772bd72309dee812c51",
+    "analysis/feature_effects.png": "8a00fefd3a62cf3dd0c158b431b6ea7e59430fc38602f4fffa280a205ab83251",
+    "analysis/paired_participants.png": "697eae2f41e3f67c07838d5e99249b2737312eaf6a1efd282ecae2f631f42c64",
+    "analysis/umap_Subject00.png": "9a35438124ba998c7aea664c396120b77ff7ea4b4a8f464c7a7780f1146a3dd5",
+    "analysis/umap_Subject17.png": "f985455ac009133bb6037d8461c64ba14a77d5910ce3c81be8664ef2728c53be",
+    "analysis/umap_Subject35.png": "ff08e7f734acaa21bf23b936e965c28769c553a348301ee017f3b18b0139ccce",
+    "permutation/permutation_distribution.png": "ac417d8be9f2ab1bb284ebbbb57f2bec930f735d4dae6285d5de3df935f4e200"
+  }
+}

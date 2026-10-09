@@ -1,0 +1,5 @@
+-r requirements-stage3-lock.txt
+umap-learn==0.5.9.post2
+numba==0.68.0
+llvmlite==0.50.0
+pynndescent==0.6.0

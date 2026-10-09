@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "models": 108,
+  "perturbations": 540,
+  "max_baseline_replay_error": 0.0,
+  "input": "Zero after frozen source scaling; 5 predefined disjoint channel regions",
+  "interpretation": "Potentially out-of-distribution perturbation and unaligned absolute weights; not causal brain-region evidence"
+}

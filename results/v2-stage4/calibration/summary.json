@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "completed_models": 252,
+  "requested_models": 252,
+  "predictions": 9072,
+  "experiments": [
+    {
+      "experiment": "none_0",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.6257716049382718,
+      "mean_subject_macro_f1": 0.5761303526134869,
+      "mean_subject_roc_auc": 0.7325102880658436
+    },
+    {
+      "experiment": "standardize_5",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.650462962962963,
+      "mean_subject_macro_f1": 0.6287558048071376,
+      "mean_subject_roc_auc": 0.7103909465020576
+    },
+    {
+      "experiment": "standardize_10",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.6712962962962963,
+      "mean_subject_macro_f1": 0.6542102493459225,
+      "mean_subject_roc_auc": 0.7182784636488341
+    },
+    {
+      "experiment": "standardize_20",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.6743827160493827,
+      "mean_subject_macro_f1": 0.6677319151940938,
+      "mean_subject_roc_auc": 0.7161351165980796
+    },
+    {
+      "experiment": "coral_5",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.6103395061728396,
+      "mean_subject_macro_f1": 0.5825724493547447,
+      "mean_subject_roc_auc": 0.6505486968449931
+    },
+    {
+      "experiment": "coral_10",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.6010802469135802,
+      "mean_subject_macro_f1": 0.5823796917339219,
+      "mean_subject_roc_auc": 0.6534636488340192
+    },
+    {
+      "experiment": "coral_20",
+      "subjects": 36,
+      "mean_subject_balanced_accuracy": 0.5848765432098764,
+      "mean_subject_macro_f1": 0.5716921094245239,
+      "mean_subject_roc_auc": 0.617798353909465
+    }
+  ]
+}

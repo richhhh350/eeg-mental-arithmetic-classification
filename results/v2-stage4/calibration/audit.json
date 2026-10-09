@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "models": 252,
+  "predictions": 9072,
+  "max_replay_error": 0.0,
+  "source_and_prefix_statistics_verified": true,
+  "inner_subject_isolation_and_selection_verified": true,
+  "common_suffix_and_calibration_disjointness_verified": true,
+  "fingerprint_id": "918c40fa6bfd99c34fa9c8dd2e416e50f52a6f26dc9cea904637b68776a88f89"
+}

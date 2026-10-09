@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "completed": 1000,
+  "requested": 1000,
+  "fixed_C": 1.0,
+  "fingerprint_id": "168437c09eaec1fd053cdee2ee91e39949a9c8b8caa83719e1a824814d8f03a4",
+  "observed_ba": 0.6064814814814814,
+  "permutations": 999,
+  "exceedances": 0,
+  "p_value": 0.001,
+  "fits": 36000,
+  "null_mean": 0.4991421977533088,
+  "null_sd": 0.034406096273663374,
+  "interpretation": "Fixed-C S2 pipeline only; participant condition-exchangeability assumption, not a test of the selected-C pipeline or removal of order confounding"
+}

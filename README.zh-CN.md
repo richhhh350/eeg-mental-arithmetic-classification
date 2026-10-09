@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+**Python V2推荐完整版主线已完成（2026-10-09）。**最后一阶段补齐有限无标签校准、明确方向的反向CORAL变体、来源拟合UMAP、999次整被试标签置换、特征统计与EEGNet脑区扰动，162项测试全部通过。共同测试后缀的主预算结果为：**不校准62.58%、对角标准化67.13%、反向CORAL60.11% BA**，负迁移与统计局限完整保留。入口：[总报告](docs/v2-final-report.md)｜[第四阶段实测](docs/v2-stage4-report.md)｜[复现说明](python-v2/README.md)｜[申请材料事实包](docs/v2-application-brief.zh-CN.md)。DANN、额外ICA和外部验证是未实施的选做扩展。
+
 **Python V2 第三阶段（2026-10-09）：**五组降采样桥接及36人×3个固定种子的EEGNet全部完成，288个模型通过独立审计和模型重放，148项测试通过。EEGNet的被试等权平均平衡准确率为**66.84%**，macro-F1为0.6231，AUC为0.7631；BA均值高于128 Hz的LR/LDA/SVM，但配对描述区间均包含零，不能据此宣称确认性提升。详见[完整报告](docs/v2-stage3-report.md)、[冻结协议](docs/v2-stage3-protocol.md)与[复现命令](python-v2/README.md#第三阶段复现)。
 
 **Python V2 第二阶段（2026-10-08）：**已完成18组实验×36人，包括时间隔离对照、传统模型比较、特征/频段/窗口消融和来源训练PCA。详见[第二阶段报告](docs/v2-stage2-report.md)与[复现命令](python-v2/README.md#第二阶段复现)。比较均按探索性结果解释，原2秒LR参考保持不变。

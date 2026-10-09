@@ -1,0 +1,16 @@
+{
+  "exported_at": "2026-10-09T20:13:45.093567+08:00",
+  "full_stage_complete": true,
+  "recommended_v2_mainline_complete": true,
+  "calibration_models": 252,
+  "predictions": 9072,
+  "permutations": 999,
+  "umap_fits": 3,
+  "eegnet_models_explained": 108,
+  "tests": 162,
+  "optional_unimplemented": [
+    "DANN",
+    "additional_ICA",
+    "external_validation"
+  ]
+}

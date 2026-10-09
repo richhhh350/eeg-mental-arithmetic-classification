@@ -1,0 +1,745 @@
+{
+  "family": [
+    {
+      "comparison": "coral_10_minus_none_0",
+      "mean_difference_pp": -2.4691358024691366,
+      "sign_flip_p": 0.37201627983720165,
+      "paired_description": {
+        "n_subjects": 36,
+        "difference_direction": "comparison minus reference",
+        "reference_mean_ba": 0.6257716049382718,
+        "comparison_mean_ba": 0.6010802469135802,
+        "mean_difference_pp": -2.4691358024691366,
+        "median_difference_pp": 0.0,
+        "wins": 17,
+        "ties": 4,
+        "losses": 15,
+        "paired_dz": -0.15578073491982752,
+        "paired_dz_definition": "Mean paired BA difference divided by sample SD of paired differences (ddof=1); null if SD is zero.",
+        "bootstrap_mean_difference_ci95_pp": [
+          -7.638888888888891,
+          2.469135802469135
+        ],
+        "bootstrap_replicates": 5000,
+        "seed": 42,
+        "bootstrap_unit": "paired participant difference",
+        "bootstrap_method": "percentile, without model refitting",
+        "interpretation": "Exploratory conditional descriptive interval for these predictions; overlapping LOSO training sets are not independent experiments. It is not a confirmatory population interval and does not adjust for comparing multiple variants.",
+        "subject_differences": [
+          {
+            "subject": "Subject00",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject01",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.75,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject02",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.6944444444444444,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject03",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.6666666666666666,
+            "difference_pp": 11.111111111111105
+          },
+          {
+            "subject": "Subject04",
+            "reference_ba": 0.9722222222222222,
+            "comparison_ba": 0.7222222222222222,
+            "difference_pp": -25.0
+          },
+          {
+            "subject": "Subject05",
+            "reference_ba": 0.41666666666666663,
+            "comparison_ba": 0.5,
+            "difference_pp": 8.333333333333337
+          },
+          {
+            "subject": "Subject06",
+            "reference_ba": 0.8611111111111112,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": -22.222222222222232
+          },
+          {
+            "subject": "Subject07",
+            "reference_ba": 0.75,
+            "comparison_ba": 0.7222222222222222,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject08",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.5,
+            "difference_pp": -19.444444444444443
+          },
+          {
+            "subject": "Subject09",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.8888888888888888,
+            "difference_pp": 19.444444444444443
+          },
+          {
+            "subject": "Subject10",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.5555555555555556,
+            "difference_pp": -8.333333333333325
+          },
+          {
+            "subject": "Subject11",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.6111111111111112,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject12",
+            "reference_ba": 0.3055555555555556,
+            "comparison_ba": 0.3611111111111111,
+            "difference_pp": 5.555555555555553
+          },
+          {
+            "subject": "Subject13",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5277777777777778,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject14",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject15",
+            "reference_ba": 0.5277777777777778,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": -8.333333333333337
+          },
+          {
+            "subject": "Subject16",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.6666666666666666,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject17",
+            "reference_ba": 0.7222222222222222,
+            "comparison_ba": 0.5833333333333334,
+            "difference_pp": -13.888888888888884
+          },
+          {
+            "subject": "Subject18",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject19",
+            "reference_ba": 0.9722222222222222,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": -33.333333333333336
+          },
+          {
+            "subject": "Subject20",
+            "reference_ba": 0.8055555555555556,
+            "comparison_ba": 0.38888888888888884,
+            "difference_pp": -41.66666666666667
+          },
+          {
+            "subject": "Subject21",
+            "reference_ba": 0.2777777777777778,
+            "comparison_ba": 0.25,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject22",
+            "reference_ba": 0.5833333333333334,
+            "comparison_ba": 0.7222222222222222,
+            "difference_pp": 13.888888888888884
+          },
+          {
+            "subject": "Subject23",
+            "reference_ba": 0.8333333333333333,
+            "comparison_ba": 0.8055555555555556,
+            "difference_pp": -2.777777777777768
+          },
+          {
+            "subject": "Subject24",
+            "reference_ba": 0.6111111111111112,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": 16.666666666666664
+          },
+          {
+            "subject": "Subject25",
+            "reference_ba": 0.6111111111111112,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": 16.666666666666664
+          },
+          {
+            "subject": "Subject26",
+            "reference_ba": 0.33333333333333337,
+            "comparison_ba": 0.4722222222222222,
+            "difference_pp": 13.888888888888884
+          },
+          {
+            "subject": "Subject27",
+            "reference_ba": 0.6666666666666666,
+            "comparison_ba": 0.9166666666666666,
+            "difference_pp": 25.0
+          },
+          {
+            "subject": "Subject28",
+            "reference_ba": 0.7222222222222222,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": -27.77777777777778
+          },
+          {
+            "subject": "Subject29",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5833333333333334,
+            "difference_pp": 8.333333333333337
+          },
+          {
+            "subject": "Subject30",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject31",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.38888888888888884,
+            "difference_pp": -16.666666666666675
+          },
+          {
+            "subject": "Subject32",
+            "reference_ba": 0.41666666666666663,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject33",
+            "reference_ba": 0.8611111111111112,
+            "comparison_ba": 0.5833333333333334,
+            "difference_pp": -27.77777777777778
+          },
+          {
+            "subject": "Subject34",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": 8.333333333333325
+          },
+          {
+            "subject": "Subject35",
+            "reference_ba": 0.9166666666666667,
+            "comparison_ba": 0.8333333333333333,
+            "difference_pp": -8.333333333333348
+          }
+        ]
+      },
+      "holm_p": 0.37201627983720165
+    },
+    {
+      "comparison": "standardize_10_minus_none_0",
+      "mean_difference_pp": 4.55246913580247,
+      "sign_flip_p": 0.027399726002739974,
+      "paired_description": {
+        "n_subjects": 36,
+        "difference_direction": "comparison minus reference",
+        "reference_mean_ba": 0.6257716049382718,
+        "comparison_mean_ba": 0.6712962962962963,
+        "mean_difference_pp": 4.55246913580247,
+        "median_difference_pp": 2.77777777777779,
+        "wins": 24,
+        "ties": 4,
+        "losses": 8,
+        "paired_dz": 0.3899257881840063,
+        "paired_dz_definition": "Mean paired BA difference divided by sample SD of paired differences (ddof=1); null if SD is zero.",
+        "bootstrap_mean_difference_ci95_pp": [
+          0.7716049382716054,
+          8.256172839506174
+        ],
+        "bootstrap_replicates": 5000,
+        "seed": 42,
+        "bootstrap_unit": "paired participant difference",
+        "bootstrap_method": "percentile, without model refitting",
+        "interpretation": "Exploratory conditional descriptive interval for these predictions; overlapping LOSO training sets are not independent experiments. It is not a confirmatory population interval and does not adjust for comparing multiple variants.",
+        "subject_differences": [
+          {
+            "subject": "Subject00",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.6111111111111112,
+            "difference_pp": -2.777777777777768
+          },
+          {
+            "subject": "Subject01",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.7777777777777777,
+            "difference_pp": 8.333333333333325
+          },
+          {
+            "subject": "Subject02",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.8055555555555556,
+            "difference_pp": 16.666666666666675
+          },
+          {
+            "subject": "Subject03",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.6944444444444444,
+            "difference_pp": 13.888888888888884
+          },
+          {
+            "subject": "Subject04",
+            "reference_ba": 0.9722222222222222,
+            "comparison_ba": 0.9444444444444444,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject05",
+            "reference_ba": 0.41666666666666663,
+            "comparison_ba": 0.5,
+            "difference_pp": 8.333333333333337
+          },
+          {
+            "subject": "Subject06",
+            "reference_ba": 0.8611111111111112,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": -8.333333333333337
+          },
+          {
+            "subject": "Subject07",
+            "reference_ba": 0.75,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject08",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.6666666666666667,
+            "difference_pp": -2.777777777777768
+          },
+          {
+            "subject": "Subject09",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.8611111111111112,
+            "difference_pp": 16.666666666666675
+          },
+          {
+            "subject": "Subject10",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.6666666666666667,
+            "difference_pp": 2.77777777777779
+          },
+          {
+            "subject": "Subject11",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.5277777777777778,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject12",
+            "reference_ba": 0.3055555555555556,
+            "comparison_ba": 0.3611111111111111,
+            "difference_pp": 5.555555555555553
+          },
+          {
+            "subject": "Subject13",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5555555555555556,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject14",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5555555555555556,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject15",
+            "reference_ba": 0.5277777777777778,
+            "comparison_ba": 0.5277777777777778,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject16",
+            "reference_ba": 0.6388888888888888,
+            "comparison_ba": 0.6666666666666666,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject17",
+            "reference_ba": 0.7222222222222222,
+            "comparison_ba": 0.8333333333333334,
+            "difference_pp": 11.111111111111116
+          },
+          {
+            "subject": "Subject18",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject19",
+            "reference_ba": 0.9722222222222222,
+            "comparison_ba": 0.9722222222222222,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject20",
+            "reference_ba": 0.8055555555555556,
+            "comparison_ba": 0.5555555555555556,
+            "difference_pp": -25.0
+          },
+          {
+            "subject": "Subject21",
+            "reference_ba": 0.2777777777777778,
+            "comparison_ba": 0.3055555555555556,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject22",
+            "reference_ba": 0.5833333333333334,
+            "comparison_ba": 0.8333333333333334,
+            "difference_pp": 25.0
+          },
+          {
+            "subject": "Subject23",
+            "reference_ba": 0.8333333333333333,
+            "comparison_ba": 0.8611111111111112,
+            "difference_pp": 2.77777777777779
+          },
+          {
+            "subject": "Subject24",
+            "reference_ba": 0.6111111111111112,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": 16.666666666666664
+          },
+          {
+            "subject": "Subject25",
+            "reference_ba": 0.6111111111111112,
+            "comparison_ba": 0.6666666666666667,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject26",
+            "reference_ba": 0.33333333333333337,
+            "comparison_ba": 0.5555555555555556,
+            "difference_pp": 22.22222222222222
+          },
+          {
+            "subject": "Subject27",
+            "reference_ba": 0.6666666666666666,
+            "comparison_ba": 0.9166666666666666,
+            "difference_pp": 25.0
+          },
+          {
+            "subject": "Subject28",
+            "reference_ba": 0.7222222222222222,
+            "comparison_ba": 0.9722222222222222,
+            "difference_pp": 25.0
+          },
+          {
+            "subject": "Subject29",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5833333333333333,
+            "difference_pp": 8.333333333333325
+          },
+          {
+            "subject": "Subject30",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject31",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.41666666666666663,
+            "difference_pp": -13.888888888888895
+          },
+          {
+            "subject": "Subject32",
+            "reference_ba": 0.41666666666666663,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": 2.777777777777779
+          },
+          {
+            "subject": "Subject33",
+            "reference_ba": 0.8611111111111112,
+            "comparison_ba": 0.611111111111111,
+            "difference_pp": -25.00000000000001
+          },
+          {
+            "subject": "Subject34",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.5833333333333333,
+            "difference_pp": 2.777777777777768
+          },
+          {
+            "subject": "Subject35",
+            "reference_ba": 0.9166666666666667,
+            "comparison_ba": 1.0,
+            "difference_pp": 8.333333333333325
+          }
+        ]
+      },
+      "holm_p": 0.05479945200547995
+    },
+    {
+      "comparison": "coral_10_minus_standardize_10",
+      "mean_difference_pp": -7.021604938271607,
+      "sign_flip_p": 0.00034999650003499967,
+      "paired_description": {
+        "n_subjects": 36,
+        "difference_direction": "comparison minus reference",
+        "reference_mean_ba": 0.6712962962962963,
+        "comparison_mean_ba": 0.6010802469135802,
+        "mean_difference_pp": -7.021604938271607,
+        "median_difference_pp": -2.777777777777779,
+        "wins": 5,
+        "ties": 9,
+        "losses": 22,
+        "paired_dz": -0.5773253708456568,
+        "paired_dz_definition": "Mean paired BA difference divided by sample SD of paired differences (ddof=1); null if SD is zero.",
+        "bootstrap_mean_difference_ci95_pp": [
+          -11.265432098765435,
+          -3.395061728395063
+        ],
+        "bootstrap_replicates": 5000,
+        "seed": 42,
+        "bootstrap_unit": "paired participant difference",
+        "bootstrap_method": "percentile, without model refitting",
+        "interpretation": "Exploratory conditional descriptive interval for these predictions; overlapping LOSO training sets are not independent experiments. It is not a confirmatory population interval and does not adjust for comparing multiple variants.",
+        "subject_differences": [
+          {
+            "subject": "Subject00",
+            "reference_ba": 0.6111111111111112,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": 2.777777777777768
+          },
+          {
+            "subject": "Subject01",
+            "reference_ba": 0.7777777777777777,
+            "comparison_ba": 0.75,
+            "difference_pp": -2.777777777777768
+          },
+          {
+            "subject": "Subject02",
+            "reference_ba": 0.8055555555555556,
+            "comparison_ba": 0.6944444444444444,
+            "difference_pp": -11.111111111111116
+          },
+          {
+            "subject": "Subject03",
+            "reference_ba": 0.6944444444444444,
+            "comparison_ba": 0.6666666666666666,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject04",
+            "reference_ba": 0.9444444444444444,
+            "comparison_ba": 0.7222222222222222,
+            "difference_pp": -22.22222222222222
+          },
+          {
+            "subject": "Subject05",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject06",
+            "reference_ba": 0.7777777777777778,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": -13.888888888888895
+          },
+          {
+            "subject": "Subject07",
+            "reference_ba": 0.7777777777777778,
+            "comparison_ba": 0.7222222222222222,
+            "difference_pp": -5.555555555555558
+          },
+          {
+            "subject": "Subject08",
+            "reference_ba": 0.6666666666666667,
+            "comparison_ba": 0.5,
+            "difference_pp": -16.666666666666675
+          },
+          {
+            "subject": "Subject09",
+            "reference_ba": 0.8611111111111112,
+            "comparison_ba": 0.8888888888888888,
+            "difference_pp": 2.777777777777768
+          },
+          {
+            "subject": "Subject10",
+            "reference_ba": 0.6666666666666667,
+            "comparison_ba": 0.5555555555555556,
+            "difference_pp": -11.111111111111116
+          },
+          {
+            "subject": "Subject11",
+            "reference_ba": 0.5277777777777778,
+            "comparison_ba": 0.6111111111111112,
+            "difference_pp": 8.333333333333337
+          },
+          {
+            "subject": "Subject12",
+            "reference_ba": 0.3611111111111111,
+            "comparison_ba": 0.3611111111111111,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject13",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.5277777777777778,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject14",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.5,
+            "difference_pp": -5.555555555555558
+          },
+          {
+            "subject": "Subject15",
+            "reference_ba": 0.5277777777777778,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": -8.333333333333337
+          },
+          {
+            "subject": "Subject16",
+            "reference_ba": 0.6666666666666666,
+            "comparison_ba": 0.6666666666666666,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject17",
+            "reference_ba": 0.8333333333333334,
+            "comparison_ba": 0.5833333333333334,
+            "difference_pp": -25.0
+          },
+          {
+            "subject": "Subject18",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject19",
+            "reference_ba": 0.9722222222222222,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": -33.333333333333336
+          },
+          {
+            "subject": "Subject20",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.38888888888888884,
+            "difference_pp": -16.666666666666675
+          },
+          {
+            "subject": "Subject21",
+            "reference_ba": 0.3055555555555556,
+            "comparison_ba": 0.25,
+            "difference_pp": -5.555555555555558
+          },
+          {
+            "subject": "Subject22",
+            "reference_ba": 0.8333333333333334,
+            "comparison_ba": 0.7222222222222222,
+            "difference_pp": -11.111111111111116
+          },
+          {
+            "subject": "Subject23",
+            "reference_ba": 0.8611111111111112,
+            "comparison_ba": 0.8055555555555556,
+            "difference_pp": -5.555555555555558
+          },
+          {
+            "subject": "Subject24",
+            "reference_ba": 0.7777777777777778,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject25",
+            "reference_ba": 0.6666666666666667,
+            "comparison_ba": 0.7777777777777778,
+            "difference_pp": 11.111111111111105
+          },
+          {
+            "subject": "Subject26",
+            "reference_ba": 0.5555555555555556,
+            "comparison_ba": 0.4722222222222222,
+            "difference_pp": -8.333333333333337
+          },
+          {
+            "subject": "Subject27",
+            "reference_ba": 0.9166666666666666,
+            "comparison_ba": 0.9166666666666666,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject28",
+            "reference_ba": 0.9722222222222222,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": -52.77777777777778
+          },
+          {
+            "subject": "Subject29",
+            "reference_ba": 0.5833333333333333,
+            "comparison_ba": 0.5833333333333334,
+            "difference_pp": 1.1102230246251565e-14
+          },
+          {
+            "subject": "Subject30",
+            "reference_ba": 0.5,
+            "comparison_ba": 0.5,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject31",
+            "reference_ba": 0.41666666666666663,
+            "comparison_ba": 0.38888888888888884,
+            "difference_pp": -2.777777777777779
+          },
+          {
+            "subject": "Subject32",
+            "reference_ba": 0.4444444444444444,
+            "comparison_ba": 0.4444444444444444,
+            "difference_pp": 0.0
+          },
+          {
+            "subject": "Subject33",
+            "reference_ba": 0.611111111111111,
+            "comparison_ba": 0.5833333333333334,
+            "difference_pp": -2.777777777777768
+          },
+          {
+            "subject": "Subject34",
+            "reference_ba": 0.5833333333333333,
+            "comparison_ba": 0.6388888888888888,
+            "difference_pp": 5.555555555555558
+          },
+          {
+            "subject": "Subject35",
+            "reference_ba": 1.0,
+            "comparison_ba": 0.8333333333333333,
+            "difference_pp": -16.666666666666675
+          }
+        ]
+      },
+      "holm_p": 0.001049989500104999
+    }
+  ],
+  "interpretation": "Approximate paired sign exchange with overlapping LOSO fits; exploratory, not independent replication. Primary family specified before stage4 scores.",
+  "repetitions": 100000,
+  "seed": 42
+}

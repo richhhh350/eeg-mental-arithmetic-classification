@@ -12,6 +12,7 @@ dependencies = ["numpy", "scipy", "mne", "scikit-learn", "matplotlib", "joblib"]
 [project.optional-dependencies]
 dev = ["pytest", "h5py"]
 deep = ["torch==2.14.1"]
+analysis = ["umap-learn==0.5.9.post2"]
 
 [project.scripts]
 eeg-v2 = "eeg_v2.cli:main"
