@@ -1,0 +1,138 @@
+{
+  "protocol_id": "stage3-resampling-eegnet-cpu-v1",
+  "frozen_on": "2026-10-08",
+  "stage2_github_commit": "134476155abfa8ce06f472747de38e00bf1237c7",
+  "stage1_config": "configs/stage1.json",
+  "task": "S2 rest_0_vs_arithmetic_1, zero target calibration",
+  "input_fs_hz": 500,
+  "output_fs_hz": 128,
+  "window_seconds": 2,
+  "resampling": {
+    "up": 32,
+    "down": 125,
+    "fir_taps": 2501,
+    "fir_cutoff_nyquist_fraction": 0.008,
+    "window": "kaiser",
+    "beta": 5.0,
+    "padtype": "reflect"
+  },
+  "resampling_boundary": "Each already average-referenced/demeaned 2-second window independently resampled with a fixed zero-phase antialias FIR; reflection uses only that window; recenter output within that window. No adjacent-window or record-wide statistics. This is window-offline, not causal sample-by-sample filtering.",
+  "bridges": [
+    {
+      "id": "s2_lr500_reference",
+      "feature": "de500",
+      "kind": "lr"
+    },
+    {
+      "id": "s2_lr500_grid",
+      "feature": "de500_grid",
+      "kind": "lr"
+    },
+    {
+      "id": "s2_lr128",
+      "feature": "de128",
+      "kind": "lr"
+    },
+    {
+      "id": "s2_lda128",
+      "feature": "de128",
+      "kind": "lda"
+    },
+    {
+      "id": "s2_svm128",
+      "feature": "de128",
+      "kind": "svm"
+    }
+  ],
+  "bridge_interpretation": "500-Hz reference uses original NFFT=1024; grid control uses NFFT=1000, matching 128-Hz NFFT=256 frequency spacing of 0.5 Hz. Both zero-padding grid and resampling can change DE. CNN uses broadband time samples whereas DE uses 4-30 Hz, so this compares representations as well as classifiers.",
+  "candidates": {
+    "lr": [
+      {
+        "C": 0.01
+      },
+      {
+        "C": 0.1
+      },
+      {
+        "C": 1.0
+      },
+      {
+        "C": 10.0
+      }
+    ],
+    "lda": [
+      {
+        "shrinkage": "auto"
+      },
+      {
+        "shrinkage": 0.1
+      },
+      {
+        "shrinkage": 0.5
+      }
+    ],
+    "svm": [
+      {
+        "C": 0.1,
+        "gamma": "scale"
+      },
+      {
+        "C": 1.0,
+        "gamma": "scale"
+      },
+      {
+        "C": 10.0,
+        "gamma": "scale"
+      }
+    ]
+  },
+  "inner_folds": 3,
+  "seeds": [
+    13,
+    42,
+    2026
+  ],
+  "model": {
+    "channels": 19,
+    "samples": 256,
+    "f1": 8,
+    "depth": 2,
+    "f2": 16,
+    "temporal_kernel": 64,
+    "separable_kernel": 16,
+    "dropout": 0.5
+  },
+  "implementation": "Local PyTorch EEGNet-8,2; author architecture and Braindecode parameter semantics checked. PyTorch default initialization; no numerical-equivalence claim. Spatial max-norm=1, classifier max-norm=0.25 after each optimizer step. Ordinary Dropout; ELU; mean pooling 4/8; BN eps=0.001 and momentum=0.01.",
+  "training": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 128,
+    "max_epochs": 60,
+    "patience": 12,
+    "min_epochs": 15,
+    "threads": 2
+  },
+  "compute_deviation": "Planning draft suggested 150 epochs/patience20 and preferred Braindecode. Before real stage3 results, synthetic CPU timing was about 0.50 s/1440-window epoch at4 threads or0.75 s at2; no CUDA available. Freeze a bounded first EEGNet comparison at60 epochs/patience12 with three seeds and all36 targets. A direct PyTorch implementation keeps the training/state audit small. No outcome-driven architecture/seed selection.",
+  "sampling": "Every source subject/condition has30 nonoverlapping windows. Seeded permutation once per epoch, all samples used, no replacement, no dropped tail. Equal total weight per subject and condition; no augmentation.",
+  "standardization": "One mean/std per channel over current source-training windows and time samples (ddof0); scale<=1e-12 replaced with1. Inner validation/outer target never fit a scaler. Store final means/stds and source IDs.",
+  "early_stopping": "Per inner fold: mean of validation-subject BA, first strict improvement >1e-12; stop when epoch>=15 and12 epochs without improvement; cap60. Select median of three best epochs, then initialize from scratch on all35 sources with base seed for that many epochs.",
+  "seed_schedule": "Inner fold RNG=base_seed+10000*(fold_index+1); final RNG=base_seed. Deterministic algorithms enabled; each task has a separate process. Reproducibility is limited to this software/hardware environment.",
+  "evaluation": "Threshold arithmetic probability>=0.5. eval() plus inference_mode; assert all parameters and buffers unchanged. No target labels passed into fitting or inference; only evaluator consumes labels after predictions.",
+  "aggregation": "Report all36 participants for each of3 seeds. Primary CNN descriptive mean: per-participant average of the3 seed-specific BA, then participant mean. Seed variability is not extra participants. Probability-ensemble score optional and separately labelled, not primary.",
+  "smoke_subjects": [
+    "Subject00",
+    "Subject17",
+    "Subject35"
+  ],
+  "smoke_seed": 42,
+  "failure_policy": "Failed folds saved explicitly; no predictions substituted, no aggregate over only successful folds. Completed fold reuse requires matching config, data, source and environment fingerprint plus output hashes.",
+  "interpretation": "Exploratory on the same36-subject dataset; no confirmatory significance or guaranteed improvement. Report budget-cap hits and source training/validation curves.",
+  "out_of_scope": [
+    "target_calibration",
+    "CORAL",
+    "DANN",
+    "additional_ICA",
+    "UMAP"
+  ]
+}

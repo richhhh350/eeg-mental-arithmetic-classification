@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "models": 3,
+  "max_score_error": 0.0,
+  "source_scalers_verified": true,
+  "inner_groups_and_epoch_selection_verified": true,
+  "frozen_inference_state_verified": true
+}

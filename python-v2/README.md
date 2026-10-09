@@ -4,6 +4,38 @@
 
 **第二阶段（2026-10-08）**已完成 S1 对照、传统模型比较、单因素消融与来源训练 PCA，见[第二阶段报告](../docs/v2-stage2-report.md)。第一阶段命令和产物保持可用。
 
+**第三阶段（2026-10-09）**已完成500→128 Hz窗口内抗混叠、五组频率网格/模型桥接，以及36人×种子13/42/2026的全部108个EEGNet组合。共288个模型、17,280条预测通过独立审计，模型重放最大误差为0；148项测试通过。EEGNet三种子指标均值BA为66.84%、macro-F1为0.6231、AUC为0.7631。配对区间均跨零，比较保持探索性，见[第三阶段报告](../docs/v2-stage3-report.md)和[实验协议](../docs/v2-stage3-protocol.md)。
+
+## 第三阶段复现
+
+先按下方“安装”创建环境并安装本项目。以下完整命令在 `python-v2` 目录执行，适用于尚不存在这些输出目录的工作副本；前3条数据命令建立审计所需的第一阶段准备数据和完整参考预测，已有对应产物时跳过这3条。请将数据路径改为自己的解压目录。不要覆盖本机已有结果，复跑整套实验可使用另一个工作副本。第三阶段新增依赖锁定在 `requirements-stage3-lock.txt`，本机验证的是Windows CPU版PyTorch 2.14.1+cpu；其他设备的运行时间和逐位数值一致性未保证。
+
+```powershell
+& .\.venv\Scripts\python.exe -m pip install -r requirements-stage3-lock.txt
+& .\.venv\Scripts\python.exe -m pytest -q --junitxml=outputs/stage3-tests.xml
+$eegDataDir = '..\..\..\eeg-during-mental-arithmetic-tasks-1.0.0\eeg-during-mental-arithmetic-tasks-1.0.0'
+& .\.venv\Scripts\python.exe -m eeg_v2.cli prepare --data-dir $eegDataDir --config configs/stage1.json --output outputs/prepared-stage1
+& .\.venv\Scripts\python.exe -m eeg_v2.cli run --prepared outputs/prepared-stage1 --output outputs/loso-stage1
+& .\.venv\Scripts\python.exe -m eeg_v2.cli verify --output outputs/loso-stage1
+& .\.venv\Scripts\python.exe -m eeg_v2.stage3 prepare --data-dir $eegDataDir --reference-prepared outputs/prepared-stage1 --output outputs/prepared-stage3
+& .\.venv\Scripts\python.exe -m eeg_v2.stage3 bridge --prepared outputs/prepared-stage3 --output outputs/bridge-stage3
+& .\.venv\Scripts\python.exe scripts/audit_stage3.py --bridge-only --output outputs/stage3-bridge-audit.json
+& .\.venv\Scripts\python.exe -m eeg_v2.stage3 run --prepared outputs/prepared-stage3 --output outputs/runs-stage3 --subjects Subject00 Subject17 Subject35 --seeds 42 --workers 3
+& .\.venv\Scripts\python.exe -m eeg_v2.stage3 verify --prepared outputs/prepared-stage3 --output outputs/runs-stage3
+Copy-Item -LiteralPath outputs/runs-stage3/verification.json -Destination outputs/stage3-smoke-verification.json
+& .\.venv\Scripts\python.exe -m eeg_v2.stage3 run --prepared outputs/prepared-stage3 --output outputs/runs-stage3 --workers 4 --resume
+& .\.venv\Scripts\python.exe scripts/audit_stage3.py
+& .\.venv\Scripts\python.exe scripts/report_stage3.py
+```
+
+`--workers`可设1—4；只是同时运行的独立任务数，不改变实验候选。每任务使用2个PyTorch线程。CPU全量预计数小时，准确时间取决于设备和早停轮数。
+
+恢复仅复用配置、代码、环境和数据指纹一致、文件哈希完整的折。中断时没有 `completed.json` 的目录必须先单独保留归档，再从头训练该折；不删除证据、不把部分训练日志当作完整模型。不要同时启动两次针对同一输出目录的训练。
+
+本机现有目录使用 `outputs/prepared-stage3`、`outputs/bridge-stage3`、`outputs/runs-stage3`。一次性收尾流程为 `scripts/pipeline_stage3.py`：先续跑，再全量独立审计，最后导出到 `results/v2-stage3` 并生成报告。只有已有对应准备数据和运行目录且没有其他训练进程时才启动。状态保存在 `outputs/stage3-pipeline-status.json`，训练进度在 `outputs/runs-stage3/summary.json`；最终状态须为 `complete` 才能称全阶段完成。
+
+`scripts/report_stage3.py --bridge-only`可生成明确标注未完成的进度报告；不带此参数时要求108折全部完成并已通过审计。报告脚本使用上述标准目录。模型和输入数组只保留本地，导出不包含EDF、MAT、NPY或模型权重。
+
 ## 第二阶段复现
 
 先完成下方环境安装和第一阶段 `prepare`。复现目录名可自行更换，`--reference-prepared` 指向第一阶段已校验的数据产物。以下仍在 `python-v2` 目录执行：
@@ -59,7 +91,7 @@ $eegDataDir = '..\..\..\eeg-during-mental-arithmetic-tasks-1.0.0\eeg-during-ment
 
 本次运行保存在本地 `outputs/prepared-stage1`、`outputs/smoke-stage1`、`outputs/loso-stage1`。上述命令使用不同的目录名称，可另行复现而不覆盖当前结果。
 
-## 冻结协议
+## 第一阶段冻结协议
 
 配置文件是 [configs/stage1.json](configs/stage1.json)。
 
@@ -69,10 +101,10 @@ $eegDataDir = '..\..\..\eeg-during-mental-arithmetic-tasks-1.0.0\eeg-during-ment
 - 窗口：2 秒、无重叠；DE 使用 θ 4—8、α 8—13、β 13—30 Hz，频段端点闭合，输出 57 维，按通道优先、频段其次排列。
 - S2：外层按人留一，源侧 3 折 GroupKFold；C 候选为 0.01、0.1、1、10，按验证被试 BA 等权均值选优，平局取小 C。标准化每次仅拟合训练数据（ddof=0）。
 - 模型决策阈值固定 0.5。测试标签不参与选择、标准化或拟合。
-- S1：先按原始时间划块，再切窗口，留 4 秒间隔；本阶段只提供时间清单与隔离测试，尚未训练 S1 模型。新增时间滤波后必须重新计算间隔与裁边。
+- S1：先按原始时间划块，再切窗口，留 4 秒间隔；第一阶段提供时间清单与隔离测试，第二阶段已完成 S1 模型对照。新增时间滤波后必须重新计算间隔与裁边。
 - 失败：记录异常与失败状态，不能用 Dummy 预测掩盖失败；未完成全部请求折时不输出完整平均成绩。
 
-V1 与 V2 的预处理、频段、重叠和选参同时不同。当前数值不能直接解释为某一改动导致的性能增益；尚未实施 EEGNet、CORAL 或 DANN。
+V1 与 V2 的预处理、频段、重叠和选参同时不同。当前数值不能直接解释为某一改动导致的性能增益。EEGNet已在第三阶段完成，CORAL与DANN尚未实施。
 
 ## 文件与证据
 

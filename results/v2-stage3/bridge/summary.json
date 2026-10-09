@@ -1,0 +1,80 @@
+{
+  "experiments": [
+    {
+      "experiment": {
+        "id": "s2_lr500_reference",
+        "feature": "de500",
+        "kind": "lr"
+      },
+      "requested_folds": 36,
+      "completed_folds": 36,
+      "status": "complete",
+      "mean_subject_balanced_accuracy": 0.6305555555555555,
+      "mean_subject_accuracy": 0.6305555555555555,
+      "mean_subject_macro_f1": 0.58441948525209,
+      "mean_subject_positive_class_f1": 0.560403710418897,
+      "mean_subject_roc_auc": 0.7551851851851852
+    },
+    {
+      "experiment": {
+        "id": "s2_lr500_grid",
+        "feature": "de500_grid",
+        "kind": "lr"
+      },
+      "requested_folds": 36,
+      "completed_folds": 36,
+      "status": "complete",
+      "mean_subject_balanced_accuracy": 0.6347222222222223,
+      "mean_subject_accuracy": 0.6347222222222223,
+      "mean_subject_macro_f1": 0.5881217130785227,
+      "mean_subject_positive_class_f1": 0.5657363909111773,
+      "mean_subject_roc_auc": 0.7560493827160495
+    },
+    {
+      "experiment": {
+        "id": "s2_lr128",
+        "feature": "de128",
+        "kind": "lr"
+      },
+      "requested_folds": 36,
+      "completed_folds": 36,
+      "status": "complete",
+      "mean_subject_balanced_accuracy": 0.6291666666666667,
+      "mean_subject_accuracy": 0.6291666666666667,
+      "mean_subject_macro_f1": 0.5819704232893397,
+      "mean_subject_positive_class_f1": 0.5570493585652448,
+      "mean_subject_roc_auc": 0.7482098765432099
+    },
+    {
+      "experiment": {
+        "id": "s2_lda128",
+        "feature": "de128",
+        "kind": "lda"
+      },
+      "requested_folds": 36,
+      "completed_folds": 36,
+      "status": "complete",
+      "mean_subject_balanced_accuracy": 0.647685185185185,
+      "mean_subject_accuracy": 0.647685185185185,
+      "mean_subject_macro_f1": 0.6001423239994507,
+      "mean_subject_positive_class_f1": 0.5812914612075998,
+      "mean_subject_roc_auc": 0.7729629629629629
+    },
+    {
+      "experiment": {
+        "id": "s2_svm128",
+        "feature": "de128",
+        "kind": "svm"
+      },
+      "requested_folds": 36,
+      "completed_folds": 36,
+      "status": "complete",
+      "mean_subject_balanced_accuracy": 0.6351851851851852,
+      "mean_subject_accuracy": 0.6351851851851852,
+      "mean_subject_macro_f1": 0.580774141732314,
+      "mean_subject_positive_class_f1": 0.5402094330005992,
+      "mean_subject_roc_auc": 0.7613580246913582
+    }
+  ],
+  "status": "complete"
+}

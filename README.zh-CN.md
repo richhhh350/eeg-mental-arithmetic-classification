@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+**Python V2 第三阶段（2026-10-09）：**五组降采样桥接及36人×3个固定种子的EEGNet全部完成，288个模型通过独立审计和模型重放，148项测试通过。EEGNet的被试等权平均平衡准确率为**66.84%**，macro-F1为0.6231，AUC为0.7631；BA均值高于128 Hz的LR/LDA/SVM，但配对描述区间均包含零，不能据此宣称确认性提升。详见[完整报告](docs/v2-stage3-report.md)、[冻结协议](docs/v2-stage3-protocol.md)与[复现命令](python-v2/README.md#第三阶段复现)。
+
 **Python V2 第二阶段（2026-10-08）：**已完成18组实验×36人，包括时间隔离对照、传统模型比较、特征/频段/窗口消融和来源训练PCA。详见[第二阶段报告](docs/v2-stage2-report.md)与[复现命令](python-v2/README.md#第二阶段复现)。比较均按探索性结果解释，原2秒LR参考保持不变。
 
 **Python V2 第一阶段（2026-10-07）：**已实现独立的 [Python 流程](python-v2/README.md)，完成 EDF 溯源、互斥时间划分、数值核验及 36 折嵌套 LOSO 逻辑回归基线。详见[阶段报告](docs/v2-stage1-report.md)。下方 MATLAB V1 与历史结果继续保留。

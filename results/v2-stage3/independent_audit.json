@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "traditional_models": 180,
+  "traditional_predictions": 10800,
+  "traditional_max_score_error": 0.0,
+  "stage1_reference_max_probability_error": 0.0,
+  "dataset_id": "542a4d324839acf8ad8cf169b2a53f500f1cf2ffb7de55af181d07e78db27c2b",
+  "eegnet_models": 108,
+  "eegnet_predictions": 6480,
+  "eegnet_verification": {
+    "passed": true,
+    "models": 108,
+    "max_score_error": 0.0,
+    "source_scalers_verified": true,
+    "inner_groups_and_epoch_selection_verified": true,
+    "frozen_inference_state_verified": true
+  },
+  "method": "Manual confusion counts and rank-AUC; source-scaler checks, grouped selection checks, saved-model replay and independent aggregation. No retraining."
+}

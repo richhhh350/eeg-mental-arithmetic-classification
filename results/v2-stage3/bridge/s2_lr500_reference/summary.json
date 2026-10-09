@@ -1,0 +1,15 @@
+{
+  "experiment": {
+    "id": "s2_lr500_reference",
+    "feature": "de500",
+    "kind": "lr"
+  },
+  "requested_folds": 36,
+  "completed_folds": 36,
+  "status": "complete",
+  "mean_subject_balanced_accuracy": 0.6305555555555555,
+  "mean_subject_accuracy": 0.6305555555555555,
+  "mean_subject_macro_f1": 0.58441948525209,
+  "mean_subject_positive_class_f1": 0.560403710418897,
+  "mean_subject_roc_auc": 0.7551851851851852
+}

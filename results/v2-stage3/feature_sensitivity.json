@@ -1,0 +1,27 @@
+{
+  "descriptive_only": true,
+  "comparisons": [
+    {
+      "contrast": "grid_change_at500",
+      "median_abs_de": 0.052504001335894834,
+      "p95_abs_de": 0.3059175455480064,
+      "max_abs_de": 1.466977672282984,
+      "rms_de": 0.13971122150828025
+    },
+    {
+      "contrast": "resample_matched_grid",
+      "median_abs_de": 0.0030509611843070328,
+      "p95_abs_de": 0.019851851641714248,
+      "max_abs_de": 0.12111135236983905,
+      "rms_de": 0.009154678149987008
+    },
+    {
+      "contrast": "combined_change",
+      "median_abs_de": 0.05353983595907419,
+      "p95_abs_de": 0.3087054278251626,
+      "max_abs_de": 1.4683671770779227,
+      "rms_de": 0.14078457918228315
+    }
+  ],
+  "stage1_exact_parity": true
+}

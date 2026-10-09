@@ -1,0 +1,187 @@
+{
+  "fingerprint": {
+    "config": {
+      "protocol_id": "stage3-resampling-eegnet-cpu-v1",
+      "frozen_on": "2026-10-08",
+      "stage2_github_commit": "134476155abfa8ce06f472747de38e00bf1237c7",
+      "stage1_config": "configs/stage1.json",
+      "task": "S2 rest_0_vs_arithmetic_1, zero target calibration",
+      "input_fs_hz": 500,
+      "output_fs_hz": 128,
+      "window_seconds": 2,
+      "resampling": {
+        "up": 32,
+        "down": 125,
+        "fir_taps": 2501,
+        "fir_cutoff_nyquist_fraction": 0.008,
+        "window": "kaiser",
+        "beta": 5.0,
+        "padtype": "reflect"
+      },
+      "resampling_boundary": "Each already average-referenced/demeaned 2-second window independently resampled with a fixed zero-phase antialias FIR; reflection uses only that window; recenter output within that window. No adjacent-window or record-wide statistics. This is window-offline, not causal sample-by-sample filtering.",
+      "bridges": [
+        {
+          "id": "s2_lr500_reference",
+          "feature": "de500",
+          "kind": "lr"
+        },
+        {
+          "id": "s2_lr500_grid",
+          "feature": "de500_grid",
+          "kind": "lr"
+        },
+        {
+          "id": "s2_lr128",
+          "feature": "de128",
+          "kind": "lr"
+        },
+        {
+          "id": "s2_lda128",
+          "feature": "de128",
+          "kind": "lda"
+        },
+        {
+          "id": "s2_svm128",
+          "feature": "de128",
+          "kind": "svm"
+        }
+      ],
+      "bridge_interpretation": "500-Hz reference uses original NFFT=1024; grid control uses NFFT=1000, matching 128-Hz NFFT=256 frequency spacing of 0.5 Hz. Both zero-padding grid and resampling can change DE. CNN uses broadband time samples whereas DE uses 4-30 Hz, so this compares representations as well as classifiers.",
+      "candidates": {
+        "lr": [
+          {
+            "C": 0.01
+          },
+          {
+            "C": 0.1
+          },
+          {
+            "C": 1.0
+          },
+          {
+            "C": 10.0
+          }
+        ],
+        "lda": [
+          {
+            "shrinkage": "auto"
+          },
+          {
+            "shrinkage": 0.1
+          },
+          {
+            "shrinkage": 0.5
+          }
+        ],
+        "svm": [
+          {
+            "C": 0.1,
+            "gamma": "scale"
+          },
+          {
+            "C": 1.0,
+            "gamma": "scale"
+          },
+          {
+            "C": 10.0,
+            "gamma": "scale"
+          }
+        ]
+      },
+      "inner_folds": 3,
+      "seeds": [
+        13,
+        42,
+        2026
+      ],
+      "model": {
+        "channels": 19,
+        "samples": 256,
+        "f1": 8,
+        "depth": 2,
+        "f2": 16,
+        "temporal_kernel": 64,
+        "separable_kernel": 16,
+        "dropout": 0.5
+      },
+      "implementation": "Local PyTorch EEGNet-8,2; author architecture and Braindecode parameter semantics checked. PyTorch default initialization; no numerical-equivalence claim. Spatial max-norm=1, classifier max-norm=0.25 after each optimizer step. Ordinary Dropout; ELU; mean pooling 4/8; BN eps=0.001 and momentum=0.01.",
+      "training": {
+        "optimizer": "Adam",
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "batch_size": 128,
+        "max_epochs": 60,
+        "patience": 12,
+        "min_epochs": 15,
+        "threads": 2
+      },
+      "compute_deviation": "Planning draft suggested 150 epochs/patience20 and preferred Braindecode. Before real stage3 results, synthetic CPU timing was about 0.50 s/1440-window epoch at4 threads or0.75 s at2; no CUDA available. Freeze a bounded first EEGNet comparison at60 epochs/patience12 with three seeds and all36 targets. A direct PyTorch implementation keeps the training/state audit small. No outcome-driven architecture/seed selection.",
+      "sampling": "Every source subject/condition has30 nonoverlapping windows. Seeded permutation once per epoch, all samples used, no replacement, no dropped tail. Equal total weight per subject and condition; no augmentation.",
+      "standardization": "One mean/std per channel over current source-training windows and time samples (ddof0); scale<=1e-12 replaced with1. Inner validation/outer target never fit a scaler. Store final means/stds and source IDs.",
+      "early_stopping": "Per inner fold: mean of validation-subject BA, first strict improvement >1e-12; stop when epoch>=15 and12 epochs without improvement; cap60. Select median of three best epochs, then initialize from scratch on all35 sources with base seed for that many epochs.",
+      "seed_schedule": "Inner fold RNG=base_seed+10000*(fold_index+1); final RNG=base_seed. Deterministic algorithms enabled; each task has a separate process. Reproducibility is limited to this software/hardware environment.",
+      "evaluation": "Threshold arithmetic probability>=0.5. eval() plus inference_mode; assert all parameters and buffers unchanged. No target labels passed into fitting or inference; only evaluator consumes labels after predictions.",
+      "aggregation": "Report all36 participants for each of3 seeds. Primary CNN descriptive mean: per-participant average of the3 seed-specific BA, then participant mean. Seed variability is not extra participants. Probability-ensemble score optional and separately labelled, not primary.",
+      "smoke_subjects": [
+        "Subject00",
+        "Subject17",
+        "Subject35"
+      ],
+      "smoke_seed": 42,
+      "failure_policy": "Failed folds saved explicitly; no predictions substituted, no aggregate over only successful folds. Completed fold reuse requires matching config, data, source and environment fingerprint plus output hashes.",
+      "interpretation": "Exploratory on the same36-subject dataset; no confirmatory significance or guaranteed improvement. Report budget-cap hits and source training/validation curves.",
+      "out_of_scope": [
+        "target_calibration",
+        "CORAL",
+        "DANN",
+        "additional_ICA",
+        "UMAP"
+      ]
+    },
+    "dataset_id": "542a4d324839acf8ad8cf169b2a53f500f1cf2ffb7de55af181d07e78db27c2b",
+    "source_files": {
+      "__init__.py": "1595a6a9982e03ac18971f2b38b4c7ec64309b657876b108f5ee7ed473b46e7d",
+      "cli.py": "2f64198958dea1d16152a5afa8aa56f863f7c2a043f017426d76b10d7405cb2f",
+      "data.py": "10803ec0c9d5d4d9f0dcb41493bbc091b86ccd147ce7d837a4cc6fd69119e458",
+      "eegnet.py": "3ab556819cc492676d8f40392b33e39f0e159aed6c2703128c1f0c2d09dad677",
+      "evaluation.py": "1cf6e7b91559dcfe9edbb02379a36027badc6db16efb85608749981a4ce25317",
+      "features.py": "6a2e6f42ae58a1252ad0c93dfc90a71b9759bd47339d1001eddb4e6964fa98ad",
+      "provenance.py": "20102e50fa888c2d31dcedf66f09f284fb79fb52a4321572e847d45b67ee679d",
+      "splits.py": "8c4568a2676bc00d646ba0277761a173c446da29c96e0ba7c75ff046e1899e15",
+      "stage2.py": "3bca6dfaf8a1e947f048adadb868c57273deb1e496fcf0893e9310c0b8be590f",
+      "stage2_analysis.py": "73b8ac893aab178f99b2b8097a135be5d184a4bfc478c043a76174ba9c7dfeae",
+      "stage2_features.py": "970beaa32ff862a537bb647ffd0e265f4f53bddbaf1556fb6c6983178239b4eb",
+      "stage2_models.py": "f2fe7accc335061ad97528c2a4e935069173d80540951bf3ae35072856c90c3d",
+      "stage2_report.py": "58a1da0c64a68cb980ad6d1364fb7e5a77a124ad91c7f4de732a9fe4b77d91ad",
+      "stage3.py": "6489214b2db323962b5a3fd4369c9c809f4bc8e00e3b76e817eaa17d0d977981",
+      "stage3_data.py": "c7cb0b21ecda1f9fc9b01a59787f55bb67c9c5c1a21f3f63b14bd014d9d5400a",
+      "stage3_training.py": "562baa9cf5b9f83d1f53d0ebfc71ab8489d7b762be89ee8933955b64c69dc4f3"
+    },
+    "environment": {
+      "python": "3.12.14",
+      "platform": "Windows-11-10.0.22621-SP0",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "logical_cpus": 16,
+      "compute": "CPU; deterministic PyTorch; per-worker thread count in config",
+      "blas_threads_during_training": 1,
+      "packages": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "mne": "1.13.2",
+        "scikit-learn": "1.9.1",
+        "matplotlib": "3.11.2",
+        "joblib": "1.6.0",
+        "pytest": "9.1.1",
+        "h5py": "3.16.0",
+        "torch": "2.14.1+cpu",
+        "filelock": "3.32.3",
+        "fsspec": "2026.7.0",
+        "networkx": "3.6.1",
+        "sympy": "1.14.0",
+        "typing-extensions": "4.16.0"
+      }
+    }
+  },
+  "fingerprint_id": "3ca4045da7a4c4e2148b924617ffec2f6a7cbcbfbbb22a40eda9b28a2345c373",
+  "started_utc": "2026-10-08T14:03:48.859222+00:00"
+}

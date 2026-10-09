@@ -1,0 +1,74 @@
+{
+  "response": [
+    {
+      "frequency_hz": 4.0,
+      "gain_db": 0.008413426804032802
+    },
+    {
+      "frequency_hz": 8.0,
+      "gain_db": 0.009558970681701875
+    },
+    {
+      "frequency_hz": 13.0,
+      "gain_db": 2.662723706728638e-05
+    },
+    {
+      "frequency_hz": 30.0,
+      "gain_db": 0.012478427270109102
+    },
+    {
+      "frequency_hz": 45.0,
+      "gain_db": 0.006977553871644208
+    },
+    {
+      "frequency_hz": 64.0,
+      "gain_db": -6.017893097056555
+    },
+    {
+      "frequency_hz": 80.0,
+      "gain_db": -57.284763508204875
+    },
+    {
+      "frequency_hz": 100.0,
+      "gain_db": -71.0964230014625
+    },
+    {
+      "frequency_hz": 150.0,
+      "gain_db": -79.89056148360022
+    },
+    {
+      "frequency_hz": 200.0,
+      "gain_db": -82.3702767460615
+    }
+  ],
+  "synthetic_sinusoids": [
+    {
+      "input_frequency_hz": 10,
+      "interior_rms": 0.7074187993009124,
+      "full_window_rms": 0.7074078554196409,
+      "interior_amplitude_db": 0.003831892456088653
+    },
+    {
+      "input_frequency_hz": 30,
+      "interior_rms": 0.7081334824919102,
+      "full_window_rms": 0.7077377091231603,
+      "interior_amplitude_db": 0.012602546751915817
+    },
+    {
+      "input_frequency_hz": 100,
+      "interior_rms": 0.0014701859439984822,
+      "full_window_rms": 0.02709196412768169,
+      "interior_amplitude_db": -53.64225471784568
+    },
+    {
+      "input_frequency_hz": 150,
+      "interior_rms": 0.0008089295939363332,
+      "full_window_rms": 0.01278141282864618,
+      "interior_amplitude_db": -58.831485564033265
+    }
+  ],
+  "checks_passed": true,
+  "half_support_original_samples": 39.0625,
+  "half_support_seconds": 0.078125,
+  "boundary_note": "Interior synthetic check omits16 output samples at each edge; real windows retain all256 samples and reflection can still affect edge estimates."
+}

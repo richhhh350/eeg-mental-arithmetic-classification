@@ -1,0 +1,8 @@
+{
+  "exported_at": "2026-10-09T16:01:58.553604+08:00",
+  "bridge": "complete",
+  "eegnet": "complete",
+  "full_stage_complete": true,
+  "models": 288,
+  "predictions": 17280
+}

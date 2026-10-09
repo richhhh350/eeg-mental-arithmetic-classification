@@ -2,6 +2,8 @@
 
 [中文说明](README.zh-CN.md)
 
+**Python V2, stage 3 (2026-10-09):** completed five resampling bridge experiments and all 36 participants × three prescribed EEGNet seeds. All 288 models passed independent audit and saved-model replay; 148 tests passed. EEGNet achieved **66.84% mean participant balanced accuracy**, macro-F1 0.6231 and AUC 0.7631. Its mean BA exceeded the 128 Hz LR/LDA/SVM controls, but all paired descriptive intervals included zero; no confirmed improvement is claimed. See the [full stage 3 report](docs/v2-stage3-report.md), [frozen protocol](docs/v2-stage3-protocol.md) and [reproduction commands](python-v2/README.md).
+
 **Python V2, stage 2 (2026-10-08):** completed 18 experiments across 36 participants: isolated within-record evaluation, traditional model comparisons, feature/band/window ablations, and source-fitted PCA. See the [stage 2 report](docs/v2-stage2-report.md) and [reproduction commands](python-v2/README.md). These are exploratory comparisons; the original 2-second LR reference remains unchanged.
 
 **Python V2, stage 1 (2026-10-07):** the independent [Python implementation](python-v2/README.md) now includes EDF provenance, interval-isolated splits, numerical validation and a nested 36-subject LOSO logistic-regression baseline. See the [stage report](docs/v2-stage1-report.md). The MATLAB V1 code and historical results below are preserved.

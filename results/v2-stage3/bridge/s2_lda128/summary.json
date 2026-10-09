@@ -1,0 +1,15 @@
+{
+  "experiment": {
+    "id": "s2_lda128",
+    "feature": "de128",
+    "kind": "lda"
+  },
+  "requested_folds": 36,
+  "completed_folds": 36,
+  "status": "complete",
+  "mean_subject_balanced_accuracy": 0.647685185185185,
+  "mean_subject_accuracy": 0.647685185185185,
+  "mean_subject_macro_f1": 0.6001423239994507,
+  "mean_subject_positive_class_f1": 0.5812914612075998,
+  "mean_subject_roc_auc": 0.7729629629629629
+}
