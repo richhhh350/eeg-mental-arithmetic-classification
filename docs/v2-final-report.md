@@ -75,4 +75,4 @@ DANN未启动。本轮推荐完整版以可复核的EEGNet与有限线性校准�
 
 ## 文件入口
 
-[第一阶段](v2-stage1-report.md)｜[第二阶段](v2-stage2-report.md)｜[第三阶段](v2-stage3-report.md)｜[第四阶段](v2-stage4-report.md)｜[复现命令](../python-v2/README.md)｜[申请材料事实包](v2-application-brief.zh-CN.md)。
+[第一阶段](v2-stage1-report.md)｜[第二阶段](v2-stage2-report.md)｜[第三阶段](v2-stage3-report.md)｜[第四阶段](v2-stage4-report.md)｜[复现命令](../python-v2/README.md)。
